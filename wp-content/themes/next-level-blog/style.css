@@ -1,0 +1,627 @@
+/*
+Theme Name: Next Level Blog
+Template: bizberg
+Text Domain: next-level-blog
+Author: Cyclone Themes
+Author URI: https://cyclonethemes.com/
+Theme URI: https://bizbergthemes.com/downloads/next-level-blog/
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Description: Next Level Blog is a clean and minimal blog theme for perfect for writers who need to create personal blog site with simple creative features and effects to make readers feel the pleasure of reading blog posts and articles, Next Level Blog theme mixes between modern, classic and minimal styles and will help you create a simple and clean blog, if you are a blogger, then it’s a perfect choice for you if you don’t need to have any experiment to setup your Wordpress Next Level Blog, it’s super simple and easy to setup, you will get high quality, responsive, well crafted blog out of the box to make writers only focuses on writing content, and it has great typography to make your fans and followers focus on every word you write.
+Tags: custom-logo,custom-menu,featured-images,threaded-comments,translation-ready,left-sidebar,right-sidebar,grid-layout,theme-options,blog,news,portfolio
+Version: 0.3
+Tested up to: 5.6
+Requires PHP: 5.6
+*/
+p{
+    font-size: 16px;
+}
+
+#blog .blog-post.blog-large .entry-date{
+    text-transform: capitalize;
+}
+
+.navbar-nav li ul li a{
+    font-family: MontserratRegular;
+}
+
+.footer_social_links {
+    display: block;
+}
+
+.ecb_category,
+.ecb_title {
+    display: block;
+}
+
+body.home header#masthead {
+    border-bottom-width: 1px !important;
+}
+
+.banner-style .container-fluid{padding: 0;}
+
+.row.banner-slider {
+    margin: 0 100px;
+}
+
+.banner-style .col-md-3 {
+    padding: 0;
+}
+
+.banner-style .slick-slide .popular-item-wp .pp-item-detail{opacity:0; transition: 0.4s opacity ease-in-out;}
+
+.banner-style .slick-slide .popular-item-wp .pp-item-detail.show {
+    opacity: 1;
+}
+
+.banner-style .slick-slide.slick-current.slick-active.slick-center .popular-item-wp .pp-item-detail{
+	opacity: 1;
+	transition-delay: 0.5s;
+}
+
+.banner-style .popular-item-wp {
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-style .popular-item-wp .pp-item-detail {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: #fff;
+    border: 1px solid #f1f1f1;
+    padding: 30px 40px;
+    text-align: left;
+    transition: all 0.5s;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.banner-style .popular-item-wp .pp-item-detail .ecb_date,
+.banner-style .popular-item-wp .pp-item-detail .slider_cat_name{display: inline-block;}
+
+.banner-style .popular-item-wp .pp-item-detail .ecb_date{padding-right: 10px;}
+
+.banner-style .popular-item-wp img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s;
+}
+
+.banner-style .popular-item-wp:hover img {
+    transform: scale(1.2);
+    transition: all 0.5s;
+}
+
+.banner-style .slick-prev {
+    left: 30px;
+}
+
+.banner-style .slick-next {
+    right: 30px;
+}
+
+.banner-style .slick-prev,
+.banner-style .slick-next {
+    background: #e91e63;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    border-radius: 0;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+.banner-style .slick-prev:before,
+.banner-style .slick-next:before {
+    color: #fff;
+    font-size: 30px;
+    font-family: "Font Awesome 5 Free";
+    opacity: 1;
+}
+
+.banner-style .slick-prev:hover:before,
+.banner-style .slick-next:hover:before {
+    color: #333;
+}
+
+.banner-style .slick-dots {
+    bottom: -15px;
+}
+
+.banner-style .slick-dots li button:before {
+    font-family: "Font Awesome 5 Free";
+}
+
+/* content box */
+
+.content-box-main{padding: 80px 0 50px; background: #f7f8f9;margin-bottom: 40px;}
+
+.content-box-item{
+	position: relative;
+    width: 100%;
+    height: 320px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    border-radius: 0px;
+    margin: 0 auto; 
+} 
+
+.content-box-inner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: 1s cubic-bezier(0.15, 0.15, 0.3, 1.3);
+}
+
+.content-box-item:hover .content-box-inner{
+	transform: rotateY(180deg); 
+}
+
+.content-box-item:hover .content-box-title{opacity: 0; transition: all 0.5s;}
+
+.content-box-image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%; 
+	background-position: center;
+    background-size: cover;
+}
+
+.content-box-image img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover; 
+}
+
+.content-box-title{
+	position: absolute;
+	width: 80%;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px 30px;
+	background: #fff;
+	line-height: 1.5;
+}
+
+.content-service{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	transform-style: preserve-3d;
+	padding: 0;
+	transform: rotateY(180deg);
+	border-radius: 0px;
+	display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content-service-inner{
+	transform-style: preserve-3d;
+	padding: 20px;
+	background: #e91e63;
+	transform: translateZ(100px); 
+}
+
+.content-service-inner h4, .content-service-inner p{color: #fff;font-size: 14px;}
+
+.content-service-inner p{margin-top: 15px;}
+
+.featured_col{
+    margin-bottom: 30px;
+}
+
+.category-main {
+    padding: 0 0 80px;
+}
+
+.category-main img {
+    width: 100%;
+}
+
+.category_item {
+    overflow: hidden;
+    position: relative;
+}
+
+.category_item::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-transition: -webkit-transform 1.8s;
+    transition: -webkit-transform 1.8s;
+    transition: transform 1.8s;
+    transition: transform 1.8s, -webkit-transform 1.8s;
+    -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -200%, 0);
+    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -200%, 0);
+    z-index: 1;
+}
+
+.category_item:hover:before {
+    -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 200%, 0);
+    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 200%, 0);
+}
+
+.category_content {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+}
+
+#featured_3_grid .bizberg_post_thumb {
+    width: 30%;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#featured_3_grid .bizberg_post_thumb:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .5);
+    -webkit-transform: scale3d(7.9, 6.4, 0) rotate3d(0, 0, 1, 45deg) translate3d(0, -70%, 0);
+    transform: scale3d(7.9, 6.4, 0) rotate3d(0, 0, 1, 45deg) translate3d(0, -70%, 0);
+    z-index: 1;
+    transition: all ease-in-out 0.6s;
+}
+
+#featured_3_grid .bizberg_post_thumb:hover:before {
+    -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 110%, 0);
+    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 110%, 0);
+    transition: all ease-in-out 0.6s;
+}
+
+#featured_3_grid .bizberg_post_text {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#featured_3_grid .bizberg_post_title h4 {
+    line-height: 1.2;
+}
+
+#featured_3_grid {
+    padding: 60px 0 40px;
+}
+
+#featured_3_grid .bizberg_post_title {
+    padding-bottom: 5px;
+}
+
+#featured_3_grid .bizberg_post_date {
+    font-size: 12px;
+}
+
+#business_event_popular_posts {
+    padding: 50px 0;
+}
+
+#business_event_popular_posts .thumb1 {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+#business_event_popular_posts .title_wrapper_1 {
+    margin-bottom: 40px;
+}
+
+#business_event_popular_posts .content1 {
+    padding: 20px 0;
+}
+
+#business_event_popular_posts .post_meta1 {
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+#business_event_popular_posts span.cat1 {
+    background: #e91e63;
+    padding: 3px 20px 3px;
+    bottom: 0;
+    position: absolute;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#bizberg_editor_choice {
+    padding: 100px 0;
+    background: #fdeedc;
+    margin-bottom: 50px;
+}
+
+.big_left_post {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    min-height: 230px;
+    overflow: hidden;
+}
+
+.big_left_post:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .5);
+    -webkit-transform: scale3d(7.9, 6.4, 0) rotate3d(0, 0, 1, 45deg) translate3d(0, -70%, 0);
+    transform: scale3d(7.9, 6.4, 0) rotate3d(0, 0, 1, 45deg) translate3d(0, -70%, 0);
+    z-index: 1;
+    transition: all ease-in-out 0.6s;
+}
+
+.big_left_post:hover:before {
+    -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 110%, 0);
+    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 110%, 0);
+    transition: all ease-in-out 0.6s;
+}
+
+.business-event-flex-container {
+    display: flex;
+}
+
+#bizberg_editor_choice .content2 {
+    display: flex;
+    height: 100%;
+}
+
+.big_left_post_content {
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.big_left_post_content .post-cat1,
+#bizberg_editor_choice .content3 .post-cat1 {
+    background: #e91e63;
+    padding: 0px 15px 1px;
+    color: #fff;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.big_left_post_content h3 a {
+    color: #fff;
+}
+
+.big_left_post_content h3 {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.big_left_post_content .post_meta2 {
+    color: #fff;
+    font-size: 12px;
+}
+
+#bizberg_editor_choice .content3 .post_meta2 {
+    color: #818181;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.business-event-flex-container .row {
+    width: 100%;
+}
+
+#bizberg_editor_choice .bizberg-row .thumbnail3 {
+    width: 30%;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+#bizberg_editor_choice .bizberg-row .thumbnail3:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .5);
+    -webkit-transform: scale3d(7.9, 6.4, 0) rotate3d(0, 0, 1, 45deg) translate3d(0, -70%, 0);
+    transform: scale3d(7.9, 6.4, 0) rotate3d(0, 0, 1, 45deg) translate3d(0, -70%, 0);
+    z-index: 1;
+    transition: all ease-in-out 0.6s;
+}
+
+#bizberg_editor_choice .bizberg-row .thumbnail3:hover:before {
+    -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 110%, 0);
+    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 110%, 0);
+    transition: all ease-in-out 0.6s;
+}
+
+#bizberg_editor_choice .bizberg-row .content3 {
+    overflow: hidden;
+}
+
+.bizberg-row {
+    width: 100%;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+#bizberg_editor_choice .right .bizberg-row:last-child {
+    margin-bottom: 0;
+}
+
+h2.editor_heading {
+    margin-bottom: 20px;
+}
+
+#business_event_popular_posts .thumb1 {
+    position: relative;
+    overflow: hidden;
+}
+
+#business_event_popular_posts .thumb1:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .5);
+    -webkit-transform: scale3d(7.9, 6.4, 0) rotate3d(0, 0, 1, 45deg) translate3d(0, -70%, 0);
+    transform: scale3d(7.9, 6.4, 0) rotate3d(0, 0, 1, 45deg) translate3d(0, -70%, 0);
+    z-index: 1;
+    transition: all ease-in-out 0.6s;
+}
+
+#business_event_popular_posts .thumb1:hover:before {
+    -webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 110%, 0);
+    transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 110%, 0);
+    transition: all ease-in-out 0.6s;
+}
+
+.navbar-default .navbar-nav>li>a{
+    letter-spacing: 0;
+}
+
+.primary_header_center .navbar-default:not(.sticky) .has-no-menu-description .navbar-nav>li>a:not(.menu_custom_btn) {
+    padding: 15px 20px 16px;
+}
+
+.primary_header_center .navbar-default:not(.sticky) .has-no-menu-description .navbar-nav li ul {
+    top: 59px;
+}
+
+.navbar.sticky .navbar-nav li ul {
+    top: 77px;
+}
+
+.eye_catching_blog_slider{
+    display: none;
+}
+
+.eye_catching_blog_slider.slick-slider{
+    display: block;
+}
+
+.content-box-main .contentbox-slider.slick-initialized {
+    display: block;
+}
+
+@media(max-width:1024px) {
+    .row.banner-slider {
+        margin: 0;
+    }
+
+    .banner-style .slick-slide .popular-item-wp .pp-item-detail{opacity: 1;}
+    .banner-style .slick-prev, .banner-style .slick-next{height: 45px; width: 45px;}
+    .banner-style .slick-prev{left: 0;}
+    .banner-style .slick-next{right: 0;}
+
+}
+
+@media(max-width:991px) {
+    #featured_3_grid .col-sm-12 {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    #featured_3_grid .bizberg_post_thumb {
+        width: 20%;
+    }
+
+    #bizberg_editor_choice {
+        padding-bottom: 70px;
+    }
+
+    #bizberg_editor_choice .business-event-flex-container {
+        display: block;
+    }
+
+    #bizberg_editor_choice .business-event-flex-container .row {
+        width: auto;
+    }
+
+    #bizberg_editor_choice .business-event-flex-container .col-sm-12.right {
+        margin-top: 30px;
+    }
+
+    .bizberg-row {
+        display: flex;
+        align-items: center;
+    }
+
+    #bizberg_editor_choice .bizberg-row .content3 {
+        width: 70%;
+    }
+
+    .content-box-item{perspective: none;}
+
+}
+
+@media(max-width:767px) {
+    #featured_3_grid .bizberg_post_thumb img {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:567px) {
+    #featured_3_grid .col-sm-12 {
+        display: block;
+    }
+
+    #featured_3_grid .bizberg_post_thumb {
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    #featured_3_grid .bizberg_post_text {
+        overflow: visible;
+    }
+
+}
